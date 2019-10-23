@@ -127,6 +127,10 @@ class Client extends EventEmitter {
         this.pupPage = page;
 
         this.emit(Events.READY);
+
+        browser.on('disconnected', () => {
+            this.emit(Events.BROWSER_CLOSED);
+        })
     }
 
     async destroy() {

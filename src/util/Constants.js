@@ -24,7 +24,8 @@ exports.Events = {
     MESSAGE_RECEIVED: 'message',
     MESSAGE_CREATE: 'message_create',
     QR_RECEIVED: 'qr',
-    DISCONNECTED: 'disconnected'
+    DISCONNECTED: 'disconnected',
+    BROWSER_CLOSED : 'browser_closed'
 }
 
 exports.MessageTypes = {
